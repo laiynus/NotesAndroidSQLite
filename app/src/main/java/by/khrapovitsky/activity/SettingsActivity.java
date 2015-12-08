@@ -58,6 +58,7 @@ public class SettingsActivity extends AppCompatActivity {
             if (key.equals("backgroundColor")) {
                 Preference pref = findPreference(key);
                 pref.setSummary(sharedPreferences.getString(key, ""));
+
             }
             if (key.equals("buttonsColor")){
                 Preference pref = findPreference(key);

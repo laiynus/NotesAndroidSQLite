@@ -60,9 +60,7 @@ public class UpdateNoteActivity extends AppCompatActivity implements View.OnClic
         super.onStart();
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
         View view = this.findViewById(android.R.id.content);
-        view.setBackgroundColor(Color.parseColor(preferences.getString("backgroundColor", "WHITE")));
-       // int buttonColor = Color.parseColor(preferences.getString("buttonsColor", "LTGRAY"));
-       // updateButton.setBackgroundColor(buttonColor);
+        view.setBackgroundColor(Color.parseColor(preferences.getString("backgroundColor", "White")));
     }
 
     @Override
